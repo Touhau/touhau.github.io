@@ -38,3 +38,7 @@ p {
 button {
     margin-left: 20px;
 }
+
+td>input{
+    background-color: lawngreen;
+}
