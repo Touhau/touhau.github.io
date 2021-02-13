@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+table{
+    margin: 20px;
+    border-style: solid;
+
+}
+
+.cell{
+    border-collapse: collapse;
+    border: 2px;
+    width: 80px;
+    height: 10px;
+    border-style: solid;
+    
+}
+
+input {
+    width: 80px;
+    
+}
+.rezult>p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 30px;
+    width: 350px;
+}
+p {
+    margin: 20px;
+}
+
+button {
+    margin-left: 20px;
+}

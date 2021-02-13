@@ -6,10 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ТЗИ 4</title>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class = "canv">
+        <table>
+            <tr> 
+                <th class="cell">f <sub>i</sub> <br> МГц </th>
+                <th class="cell">U <sub>(с+ш)i</sub> <br> дБ </th>
+                <th class="cell">U <sub>шi</sub> <br> дБ </th>
+                <th class="cell">U <sub>ci</sub> <br> дБ </th>
+                <th class="cell">U <sub>1 изм i</sub> <br> мкВ </th>
+                <th class="cell">U <sub>2 изм i</sub> <br> мкВ </th>
+                <th class="cell">K <sub>Пi</sub> <br> дБ/м </th>
+                <th class="cell">R <sub>i</sub> <br> М </th>
+            </tr>
+            <tr>
+                <td class="cell"><input type="text" name="" id="f1"></td>
+                <td class="cell"><input type="text" name="" id="ucsh1"></td>
+                <td class="cell"><input type="text" name="" id="ush1"></td>
+                <td id="uc1" class="cell"></td>
+                <td class="cell"><input type="text" name="" id="u11"></td>
+                <td class="cell"><input type="text" name="" id="u21"></td>
+                <td id="k1" class="cell"></td>
+                <td id="r1" class="cell"></td>
+            </tr>
+            <tr>
+                <td class="cell"><input type="text" name="" id="f2"></td>
+                <td class="cell"><input type="text" name="" id="ucsh2"></td>
+                <td class="cell"><input type="text" name="" id="ush2"></td>
+                <td id="uc2" class="cell"></td>
+                <td class="cell"><input type="text" name="" id="u12"></td>
+                <td class="cell"><input type="text" name="" id="u22"></td>
+                <td id="k2" class="cell"></td>
+                <td id="r2" class="cell"></td>
+            </tr>
+            <tr>
+                <td class="cell"><input type="text" name="" id="f3"></td>
+                <td class="cell"><input type="text" name="" id="ucsh3"></td>
+                <td class="cell"><input type="text" name="" id="ush3"></td>
+                <td id="uc3" class="cell"></td>
+                <td class="cell"><input type="text" name="" id="u13"></td>
+                <td class="cell"><input type="text" name="" id="u23"></td>
+                <td id="k3" class="cell"></td>
+                <td id="r3" class="cell"></td>
+            </tr>
+        </table>
 
-    
+        <div class="lr">
+            <label for="l">
+                <p>Введите расстояние L: <input type="text" name="" id="l"></p>
+            </label>
+        </div>
+
+        <div class="kzr">
+            <label for="l">
+                <p>Введите расстояние до КЗ: <input type="text" name="" id="kz"></p>
+            </label>
+        </div>
+
+        <button onclick="rzone()"> Рассчитать </button>
+
+        <div class = "rezult", id = "rezult1">
+            <p id = "rezult"> </p>
+        </div>
+    </div>
 </body>
 </html>
