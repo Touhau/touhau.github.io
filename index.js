@@ -48,7 +48,7 @@ function rzone() {
 
         // Итог
         let maxr = Math.max(ri1, ri2, ri3);
-        kzr = parseFloat(document.getElementById('kz').value);
+        kzr = parseFloat(document.getElementById('kz').value.replace(",",'.'));
         if (isNaN(kzr)){
             alert("Введите расстояние до границы");
         } else {
@@ -73,7 +73,7 @@ function calcUci(ucsh, ush) {
 
 // Вычисляем Ki
 function calcki(u1, u2) {
-    l = parseFloat(document.getElementById('l').value);
+    l = parseFloat(document.getElementById('l').value.replace(",",'.'));
     if (isNaN(l)){
         alert("Введите расстояние L");
     } else {
