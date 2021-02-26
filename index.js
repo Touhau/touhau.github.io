@@ -1,9 +1,9 @@
 // Получаем значения таблицы и проверяем их на корректность ввода
 function rzone() {
     let ush1, ush2, ush3, uh1, uh2, uh3, u11, u21, u12, u22, u13, u23;
-    ush1 =parseInt(document.getElementById("ucsh1").value); 
-    ush2 =parseInt(document.getElementById("ucsh2").value);
-    ush3 =parseInt(document.getElementById("ucsh3").value);
+    ush1 = parseInt(document.getElementById("ucsh1").value); 
+    ush2 = parseInt(document.getElementById("ucsh2").value);
+    ush3 = parseInt(document.getElementById("ucsh3").value);
     uh1 = parseInt(document.getElementById("ush1").value);
     uh2 = parseInt(document.getElementById("ush2").value);
     uh3 = parseInt(document.getElementById("ush3").value);
@@ -67,7 +67,7 @@ function rzone() {
 // Рассчитали Uci
 function calcUci(ucsh, ush) {
     let ci;
-    ci = Math.log10(Math.sqrt((10**(ucsh/10)) - (10**(ush/10))));
+    ci = 20*(Math.log10(Math.sqrt((10**(ucsh/10)) - (10**(ush/10)))));
     return ci;
 }
 
